@@ -2,6 +2,7 @@ import { Hamburger, Ruler } from "phosphor-react";
 import Input from "./components/Input";
 import Button from "./components/Button";
 import { useState } from "react";
+import Description from "./components/Description";
 
 function App() {
   const [showResult, setShowResult] = useState(false);
@@ -15,9 +16,10 @@ function App() {
       </div>
       <div className="bg-neutral-500 h-96 w-[90%] sm:w-4/5 rounded-xl flex flex-col">
         {showResult ? (
-          <h2 className="flex justify-center text-4xl flex-1 items-center">
-            Seu IMC é de {Math.round(imc)}
-          </h2>
+          <div className="flex flex-col flex-1 justify-center items-center text-center">
+            <h2 className="text-4xl">Seu IMC é de {Math.round(imc)}</h2>
+            <Description imc={imc} />
+          </div>
         ) : (
           <form
             onSubmit={(e) => {
