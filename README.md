@@ -1,25 +1,24 @@
-<h1 align="center"> Calculadora de IMC </h1>
+<h1 align="center"> BMI Calculator </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
 </p>
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=GPL-3.0&color=49AA26&labelColor=000000">
-  
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="Calculadora de Imc" src=".github/preview.jpg" width="100%">
+  <img alt="BMI Calculator" src=".github/preview.png" width="100%">
 </p>
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following technologies:
 
 - HTML e CSS
 - JavaScript
@@ -27,10 +26,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Tailwind CSS
 - React
 
-## 💻 Projeto
+## 💻 Project
 
-A Calculadora de IMC é um projeto que calcula o índice de massa corporal de uma pessoa.
+The BMI Calculator is a project that calculates a person's body mass index.
 
-## :memo: Licença
+## :memo: License
 
-Esse projeto está sob a licença GPL-3.0.
+This project is under the GPL-3.0 license.
