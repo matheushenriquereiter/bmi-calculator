@@ -1,5 +1,3 @@
-import React from "react";
-
 const Description = ({ imc }) => {
   switch (true) {
     case imc < 18.5:

@@ -9,12 +9,12 @@ function App() {
   const [imc, setImc] = useState("");
 
   return (
-    <div className="h-screen flex flex-col items-center bg-neutral-800 text-neutral-100 justify-around">
+    <div className="h-screen flex flex-col items-center bg-neutral-800 text-neutral-100 justify-evenly">
       <div className="flex flex-col items-center">
         <h1 className="text-5xl text-center">Calculadora de IMC</h1>
         <p>(Índice de massa corporal)</p>
       </div>
-      <div className="bg-neutral-500 h-96 w-[90%] sm:w-4/5 rounded-xl flex flex-col">
+      <div className="bg-neutral-500 h-96 w-4/5 lg:w-[1024px] rounded-xl flex flex-col">
         {showResult ? (
           <div className="flex flex-col flex-1 justify-center items-center text-center">
             <h2 className="text-4xl">Seu IMC é de {Math.round(imc)}</h2>
@@ -29,7 +29,7 @@ function App() {
             }}
             className="flex flex-col flex-1"
           >
-            <div className="flex-1 flex flex-col justify-around">
+            <div className="flex-1 flex flex-col justify-evenly">
               <Input
                 placeholder="Seu peso..."
                 type="number"

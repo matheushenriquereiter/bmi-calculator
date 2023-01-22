@@ -1,5 +1,3 @@
-import React from "react";
-
 const Input = ({ icon, placeholder, type, children, id }) => {
   return (
     <div className="flex flex-col gap-4">
@@ -7,7 +5,7 @@ const Input = ({ icon, placeholder, type, children, id }) => {
       <div className="flex rounded-xl bg-neutral-700 placeholder-neutral-100 pl-2 mx-2 items-center">
         {icon}
         <input
-          className="bg-neutral-700 placeholder-neutral-100 p-2 outline-none"
+          className="bg-neutral-700 placeholder-neutral-100 p-2 h-full w-full rounded-xl outline-none"
           placeholder={placeholder}
           type={type}
           id={id}
