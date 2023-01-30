@@ -20,9 +20,9 @@
 
 This project was developed with the following technologies:
 
-- HTML e CSS
+- HTML and CSS
 - JavaScript
-- Git e GitHub
+- Git and GitHub
 - Tailwind CSS
 - React
 
@@ -32,4 +32,4 @@ The BMI Calculator is a project that calculates a person's body mass index.
 
 ## :memo: License
 
-This project is under the GPL-3.0 license.
+This project is under the GPL-3.0 license. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
