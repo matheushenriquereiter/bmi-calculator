@@ -1,22 +1,23 @@
-import { Hamburger, Ruler } from "phosphor-react";
-import Input from "./components/Input";
-import Button from "./components/Button";
 import { useState } from "react";
-import Description from "./components/Description";
+import { Input } from "./components/Input";
+import { Button } from "./components/Button";
+import { Description } from "./components/Description";
 
-function App() {
+export function App() {
   const [showResult, setShowResult] = useState(false);
   const [imc, setImc] = useState("");
 
   return (
-    <div className="h-screen flex flex-col items-center bg-neutral-800 text-neutral-100 justify-evenly">
-      <div className="flex flex-col items-center">
-        <h1 className="text-5xl text-center">Calculadora de IMC</h1>
-        <p>(Índice de massa corporal)</p>
-      </div>
-      <div className="bg-neutral-500 h-96 w-4/5 lg:w-[1024px] rounded-xl flex flex-col">
+    <div className="flex h-screen flex-col items-center justify-center bg-[#090e23] font-bold text-[#eee]">
+      <div className="flex h-full w-full max-w-[640px] flex-col justify-center rounded-md bg-[#1D1E34] p-[32px] sm:h-fit">
+        {!showResult ? (
+          <div className="flex flex-col items-center pb-[42px]">
+            <h1 className="text-center text-3xl">Calculadora de IMC</h1>
+            <p className="text-sm">(Índice de massa corporal)</p>
+          </div>
+        ) : null}
         {showResult ? (
-          <div className="flex flex-col flex-1 justify-center items-center text-center">
+          <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-4xl">Seu IMC é de {Math.round(imc)}</h2>
             <Description imc={imc} />
           </div>
@@ -27,32 +28,23 @@ function App() {
               setImc(weight.value / (height.value / 100) ** 2);
               setShowResult(true);
             }}
-            className="flex flex-col flex-1"
+            className="flex flex-col gap-[32px]"
           >
-            <div className="flex-1 flex flex-col justify-evenly">
-              <Input
-                placeholder="Seu peso..."
-                type="number"
-                icon={<Hamburger size={32} />}
-                id="weight"
-              >
+            <div className="flex flex-col gap-[24px]">
+              <Input placeholder="Seu peso..." type="number" id="weight">
                 Digite seu peso em Kg *
               </Input>
-              <Input
-                placeholder="Sua altura..."
-                type="number"
-                icon={<Ruler size={32} />}
-                id="height"
-              >
+              <Input placeholder="Sua altura..." type="number" id="height">
                 Digite sua altura em centímetros *
               </Input>
             </div>
-            <Button />
+            <div className="flex gap-[16px]">
+              <Button type="submit" name="Calcular" backgroundColor="#DF3C36" />
+              <Button type="reset" name="Limpar" backgroundColor="#403F44" />
+            </div>
           </form>
         )}
       </div>
     </div>
   );
 }
-
-export default App;

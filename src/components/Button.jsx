@@ -1,14 +1,12 @@
-import React from "react";
-
-const Button = ({ onClick }) => {
+export const Button = ({ onClick, type, name, backgroundColor }) => {
   return (
     <button
+      type={type}
       onClick={onClick}
-      className="bg-neutral-600 h-14 text-4xl rounded-b-xl"
+      className="h-[48px] w-full rounded-md text-2xl"
+      style={{ backgroundColor: backgroundColor }}
     >
-      Enviar
+      {name}
     </button>
   );
 };
-
-export default Button;

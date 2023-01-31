@@ -1,4 +1,4 @@
-const Description = ({ imc }) => {
+export const Description = ({ imc }) => {
   switch (true) {
     case imc < 18.5:
       return <p>Você está abaixo do peso!</p>;
@@ -12,5 +12,3 @@ const Description = ({ imc }) => {
       return <p>Você está com obesidade mórbida!</p>;
   }
 };
-
-export default Description;
