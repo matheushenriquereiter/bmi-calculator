@@ -11,3 +11,9 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+@layer utilities {
+  .transition-duration {
+    transition: all 0.2s;
+  }
+}

@@ -3,7 +3,7 @@ export const Button = ({ onClick, type, name, backgroundColor }) => {
     <button
       type={type}
       onClick={onClick}
-      className="h-[48px] w-full rounded-md text-2xl"
+      className="transition-duration h-[48px] w-full rounded-md text-2xl hover:scale-105"
       style={{ backgroundColor: backgroundColor }}
     >
       {name}
