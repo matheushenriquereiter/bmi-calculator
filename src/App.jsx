@@ -25,8 +25,10 @@ export function App() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              setImc(weight.value / (height.value / 100) ** 2);
-              setShowResult(true);
+              if (weight.value && height.value) {
+                setImc(weight.value / (height.value / 100) ** 2);
+                setShowResult(true);
+              }
             }}
             className="flex flex-col gap-[32px]"
           >
