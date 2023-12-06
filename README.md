@@ -32,4 +32,4 @@ The BMI Calculator is a project that calculates a person's body mass index.
 
 ## :memo: License
 
-This project is under the GPL-3.0 license. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+This project is under the GPL-3.0 license. See the [LICENSE](LICENSE.md) file for more details.
